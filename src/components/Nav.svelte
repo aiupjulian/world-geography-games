@@ -4,15 +4,37 @@
 </script>
 
 <style>
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0.8rem;
+	}
+	.logo {
+		font-size: 1.5rem;
+	}
+	nav {
+		margin-top: 1rem;
+	}
+	nav a {
+		margin: 0.5rem;
+	}
 	.active {
-		font-size: 20px;
+		border-bottom: 2px solid;
+	}
+	@media (min-width: 768px) {
+		header {
+			flex-direction: row;
+			justify-content: space-between;
+		}
 	}
 </style>
 
 <header>
-	🌎 Geography Games
+	<a href="#{routes.Home.path}" class="logo">🌎 Geography Games</a>
+	<nav>
+		{#each Object.entries(routes).slice(1) as [name, route], i}
+			<a href="#{route.path}" class="{active.path === route.path ? "active" : ""}">{name}</a>
+		{/each}
+	</nav>
 </header>
-{active.path}
-{#each Object.entries(routes) as [name, route], i}
-	<a href="#{route.path}" class="{active.path === route.path ? "active" : ""}">{name}</a>
-{/each}

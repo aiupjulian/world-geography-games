@@ -14,6 +14,9 @@
 </script>
 
 <style>
+	:global(body) {
+		font-family: Montserrat,sans-serif;
+	}
 	main {
 		text-align: center;
 		padding: 1em;
