@@ -4,7 +4,7 @@
 	import Nav from './components/Nav.svelte';
 
 	let active = routes.Home;
-
+	// Router
 	async function hashchange() {
 		const path = window.location.hash.slice(1);
 		active = Object.values(routes).find(route => route.path === path) || routes.Home;
@@ -14,20 +14,10 @@
 </script>
 
 <style>
-	:global(body) {
-		font-family: Montserrat,sans-serif;
-	}
 	main {
-		text-align: center;
 		padding: 1em;
-		max-width: 240px;
+		max-width: 700px;
 		margin: 0 auto;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
 	}
 </style>
 

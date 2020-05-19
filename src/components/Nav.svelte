@@ -11,7 +11,8 @@
 		padding: 0.8rem;
 	}
 	.logo {
-		font-size: 1.5rem;
+		font-size: 1.6rem;
+		font-weight: bold;
 	}
 	nav {
 		margin-top: 1rem;
@@ -26,6 +27,9 @@
 		header {
 			flex-direction: row;
 			justify-content: space-between;
+		}
+		nav {
+			margin-top: 0;
 		}
 	}
 </style>

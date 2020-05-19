@@ -1,3 +1,8 @@
+html {
+	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -16,26 +21,32 @@ body {
 @font-face{
   font-family: Montserrat;
 	src: url('/fonts/Montserrat-Light.ttf') format('truetype');
-	font-weight: normal;
+	font-weight: 400;
+}
+@font-face{
+  font-family: Montserrat;
+	src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+	font-weight: 700;
 }
 @font-face{
   font-family: Montserrat;
 	src: url('/fonts/Montserrat-Black.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: 900;
 }
 
 a {
-	color: #FFF;
+	font-size: 1.2rem;
+	color: #c35555;
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #AAA;
+	color: #c35555;
 }
 
 a:visited {
-	color: #FFF;
+	color: #c35555;
 }
 
 label {
