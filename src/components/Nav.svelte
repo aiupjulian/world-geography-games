@@ -38,7 +38,7 @@
 	<a href="#{routes.Home.path}" class="logo">🌎 Geography Games</a>
 	<nav>
 		{#each Object.entries(routes).slice(1) as [name, route], i}
-			<a href="#{route.path}" class="{active.path === route.path ? "active" : ""}">{name}</a>
+			<a href="#{route.path}" class:active={active.path === route.path}>{name}</a>
 		{/each}
 	</nav>
 </header>
