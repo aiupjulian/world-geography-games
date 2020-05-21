@@ -2,12 +2,12 @@
   import Option from './Option.svelte';
   import {getOptionsWithCorrect, FLAG} from '../utils/game.js';
   export let countryProperty;
-  const [options, correctIndex] = getOptionsWithCorrect(countryProperty);
+  const options = getOptionsWithCorrect(countryProperty);
+  const correct = options.find(option => option.correct);
   let disabled = false;
-  let selectedIndex;
   const handleSelected = (index) => {
     disabled = true;
-    selectedIndex = index;
+    options[index].selected = true;
   }
 </script>
 
@@ -31,13 +31,11 @@
 </style>
 
 <div class="game">
-  <div class="correct" class:flag={countryProperty === FLAG}>{options[correctIndex][countryProperty]}</div>
+  <div class="correct" class:flag={countryProperty === FLAG}>{correct[countryProperty]}</div>
   {#each options as option, index}
     <Option
       {option}
       {disabled}
-      correct={index === correctIndex}
-      selected={index === selectedIndex}
       on:click={() => handleSelected(index)}
     />
   {/each}

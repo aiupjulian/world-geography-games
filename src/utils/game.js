@@ -2,14 +2,14 @@ import countries from './countries.json';
 const OPTIONS = 4;
 
 const getRandomOptions = (array) => {
-  let result = new Array(OPTIONS),
-      len = array.length,
-      taken = new Array(len),
-      options = OPTIONS;
+  const result = new Array(OPTIONS);
+  let length = array.length;
+  const taken = new Array(length);
+  let options = OPTIONS;
   while (options--) {
-      const x = Math.floor(Math.random() * len);
-      result[options] = array[x in taken ? taken[x] : x];
-      taken[x] = --len in taken ? taken[len] : len;
+    const x = Math.floor(Math.random() * length);
+    result[options] = {...array[x in taken ? taken[x] : x]};
+    taken[x] = --length in taken ? taken[length] : length;
   }
   return result;
 }
@@ -26,5 +26,6 @@ export const getOptionsWithCorrect = (game) => {
     : countries;
   const options = getRandomOptions(countriesList);
   const correctIndex = Math.floor(Math.random() * options.length);
-  return [options, correctIndex];
+  options[correctIndex].correct = true;
+  return options;
 }

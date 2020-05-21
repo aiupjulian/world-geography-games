@@ -1,8 +1,6 @@
 <script>
   export let option;
   export let disabled;
-  export let selected;
-  export let correct;
 </script>
 
 <style>
@@ -27,8 +25,8 @@
 <button
   on:click
   {disabled}
-  class:correct={disabled && correct}
-  class:incorrect={selected && !correct}
+  class:correct={disabled && ('correct' in option)}
+  class:incorrect={option.selected && !('correct' in option)}
 >
 	{option.name}
 </button>
