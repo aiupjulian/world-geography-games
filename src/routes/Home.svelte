@@ -13,7 +13,13 @@
   }
 </style>
 
-<p>TODO: implement SHARE API? or another cool new API?</p>
+<div>TODO:
+  <ul>
+    <li>implement SHARE API? or another cool new API?</li>
+    <li>Lighthouse</li>
+    <li>svg flaticons for header instead of emoji</li>
+  </ul>
+</div>
 <p>Welcome to Geography Games, where you can practice to improve your knowledge in geography.</p>
 <div class="game">
   <div class="title">🏳️ Flags</div>

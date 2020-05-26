@@ -2,13 +2,13 @@
   import Option from './Option.svelte';
   import {getOptionsWithCorrect, FLAG} from '../utils/game.js';
   export let countryProperty;
-  const options = getOptionsWithCorrect(countryProperty);
-  const correct = options.find(option => option.correct);
+  let options = getOptionsWithCorrect(countryProperty);
   let disabled = false;
   const handleSelected = (index) => {
     disabled = true;
     options[index].selected = true;
   }
+  $: correct = options.find(option => option.correct);
 </script>
 
 <style>
