@@ -39,4 +39,5 @@
       on:click={() => handleSelected(index)}
     />
   {/each}
+  <button on:click={() => {}}>Next!</button>
 </div>
