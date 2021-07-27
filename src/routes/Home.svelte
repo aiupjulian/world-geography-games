@@ -13,17 +13,6 @@
   }
 </style>
 
-<div>TODO:
-  <ul>
-    <li>implement SHARE API? or another cool new API?</li>
-    <li>Lighthouse</li>
-    <li>svg flaticons for header instead of emoji</li>
-    <li>https://codelabs.developers.google.com/codelabs/your-first-pwapp/#6</li>
-    <li>https://developers.google.com/web/tools/workbox/</li>
-    <li></li>
-    <li></li>
-  </ul>
-</div>
 <p>Welcome to Geography Games, where you can practice to improve your knowledge in geography.</p>
 <div class="game">
   <div class="title">🏳️ Flags</div>

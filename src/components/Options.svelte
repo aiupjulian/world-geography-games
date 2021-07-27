@@ -8,6 +8,10 @@
     disabled = true;
     options[index].selected = true;
   }
+  const handleNext = () => {
+    disabled = false;
+    options = getOptionsWithCorrect(countryProperty);
+  }
   $: correct = options.find(option => option.correct);
 </script>
 
@@ -28,6 +32,15 @@
     line-height: 6rem;
     margin: 0 auto;
   }
+  .next {
+    width: 60%;
+    max-width: 200px;
+    margin: 20px auto 0;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #39455a;
+    color: white;
+  }
 </style>
 
 <div class="game">
@@ -39,5 +52,7 @@
       on:click={() => handleSelected(index)}
     />
   {/each}
-  <button on:click={() => {}}>Next!</button>
+  {#if disabled}
+    <button class="next" on:click={handleNext}>Next!</button>
+  {/if}
 </div>
