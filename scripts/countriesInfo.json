@@ -736,7 +736,7 @@
     "areaInSqKm": "14.0",
     "countryCode": "CC",
     "west": 96.816941408,
-    "countryName": "Cocos [Keeling] Islands",
+    "countryName": "Cocos (Keeling) Islands",
     "continentName": "Asia",
     "currencyCode": "AUD"
   },
@@ -831,7 +831,7 @@
     "areaInSqKm": "322460.0",
     "countryCode": "CI",
     "west": -8.60205899999994,
-    "countryName": "Ivory Coast",
+    "countryName": "Côte d’Ivoire",
     "continentName": "Africa",
     "currencyCode": "XOF"
   },
@@ -4748,5 +4748,20 @@
     "countryName": "Zimbabwe",
     "continentName": "Africa",
     "currencyCode": "ZWL"
+  },
+  {
+    "continent": "EU",
+    "capital": "London",
+    "countryName": "England"
+  },
+  {
+    "continent": "EU",
+    "capital": "Edinburgh",
+    "countryName": "Scotland"
+  },
+  {
+    "continent": "EU",
+    "capital": "Cardiff",
+    "countryName": "Wales"
   }
 ]
