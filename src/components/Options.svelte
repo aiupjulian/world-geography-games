@@ -25,18 +25,17 @@
   .correct {
     font-size: 2rem;
     justify-content: center;
-    margin: 2rem auto;
+    margin: 0 auto 0.5rem;
+    line-height: 4.5rem;
   }
   .flag {
-    font-size: 6rem;
-    line-height: 6rem;
-    margin: 0 auto;
+    font-size: 4.5rem;
   }
   .next {
     width: 60%;
     max-width: 200px;
-    margin: 20px auto 0;
-    font-size: 24px;
+    margin: 0.5rem auto 0;
+    font-size: 1.5rem;
     font-weight: 600;
     background-color: #39455a;
     color: white;

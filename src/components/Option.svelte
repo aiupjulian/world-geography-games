@@ -8,8 +8,9 @@
     background-color: #39455a;
     color: white;
     font-weight: bold;
-    padding: 20px;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
   }
   button:disabled {
     background-color: grey;
