@@ -3,6 +3,16 @@
   export let disabled;
 </script>
 
+<button
+  on:click
+  {disabled}
+  class="button"
+  class:correct={disabled && 'correct' in option}
+  class:incorrect={option.selected && !('correct' in option)}
+>
+  {option.name}
+</button>
+
 <style>
   button {
     font-weight: bold;
@@ -17,13 +27,3 @@
     background-color: hsl(348, 100%, 61%);
   }
 </style>
-
-<button
-  on:click
-  {disabled}
-  class="button"
-  class:correct={disabled && ('correct' in option)}
-  class:incorrect={option.selected && !('correct' in option)}
->
-	{option.name}
-</button>

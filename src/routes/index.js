@@ -13,8 +13,8 @@ const routes = {
   },
   Capitals: {
     path: '/capitals',
-    Component: Capitals
-  }
-}
+    Component: Capitals,
+  },
+};
 
 export default routes;

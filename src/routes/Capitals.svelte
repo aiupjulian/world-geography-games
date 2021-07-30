@@ -1,6 +1,6 @@
 <script>
   import Options from '../components/Options.svelte';
-  import {CAPITAL} from '../utils/game.js';
+  import { CAPITAL } from '../utils/game.js';
 </script>
 
 <Options countryProperty={CAPITAL} />
